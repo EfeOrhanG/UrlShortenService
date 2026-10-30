@@ -1,0 +1,40 @@
+@host = https://your-host-address
+
+
+### Short a new URL
+
+POST {{host}}/api/shorten
+Content-Type: application/json
+
+{
+  "url": "https://www.github.com"
+}
+
+###
+
+GET {{host}}/api/shorten/<SHORT_CODE>
+Accept: application/json
+
+###
+
+GET {{host}}/api/shorten/<SHORT_CODE>/stats
+Accept: application/json
+
+###
+
+GET {{host}}/api/<SHORT_CODE>
+Accept: application/json
+
+###
+
+PUT {{host}}/api/shorten/<SHORT_CODE>
+Content-Type: application/json
+Accept: application/json
+{
+  "url": "https://wwww.github.com/updated"
+}
+
+###
+
+DELETE {{host}}/api/shorten/<SHORT_CODE>
+Accept: application/json
