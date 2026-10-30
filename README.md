@@ -84,18 +84,6 @@ Deletes an existing shortened URL.
 DELETE /api/shorten/{shortCode}
 ```
 
-### Create Short URL
-
-POST /api/urls
-
-### Get URL Statistics
-
-GET /api/urls/stats/{shortCode}
-
-### Redirect
-
-GET /{shortCode}
-
 
 
 ## Running the Project
